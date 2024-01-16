@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  min-height: 100vh;
+  /* background-color: #b555e6; */
+  /* background-color: deepskyblue; */
+  /* background: rgb(2,0,36);
+  background: linear-gradient(321deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,196,252,1) 100%);
+}
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+

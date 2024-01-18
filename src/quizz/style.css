@@ -2,8 +2,11 @@
     /* background-color: #532c69; */
     /* background-color: rgb(201, 20, 56); */
     background-color: green;
-    width: 450px;
+    /* width: 450px; */
+    width: 700px;
+    /* height: 900px; */
     min-height: min-content;
+    min-height: 300px;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
@@ -27,20 +30,25 @@
 
 .pergunta{
     margin-bottom: 12px;
+    margin-top: 40px;
+    font-size: larger;
+    text-align: center;
 }
 
 .grupoResposta {
     display: flex;
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .resposta{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    margin-top: 40px;
 }
 
 button{
@@ -60,13 +68,42 @@ button{
 }
 
 button:hover{
-    background-color: #2b0f3b;
+    /* background-color: #2b0f3b; */
+    background-color: blue;
 }
 
 .pontuacao{
     display: flex;
-    min-width: 200px;
-    font-size: 24px;
     justify-content: center;
     align-items: center;
+    min-width: 200px;
+    font-size: 24px;
+}
+
+.img-respImg{
+    height: 40px;
+    width: 40px;
+}
+
+.box-imgRes{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100%;
+    padding: 2px;
+    background-color: white;
+    display: flex;
+}
+
+#box-imgResCorreta, #box-imgResIncorreta{
+    display: none;
+}
+
+#box-btn-jogarNovamente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#btn-jogarNovamente{
+    width: fit-content;
 }

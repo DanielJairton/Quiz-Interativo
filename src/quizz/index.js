@@ -2,9 +2,9 @@ import React from 'react'
 import './style.css'
 import { Perguntas } from '../Data/perguntas'
 import { useState } from 'react'
-// import imgRespCorreta from './img/correta.png'
-import imgResCorreta from '../quizz/img/correto.png'
-import imgResIncorreta from '../quizz/img/incorreto.png'
+
+//import imgResCorreta from '../quizz/img/correto.png'
+//import imgResIncorreta from '../quizz/img/incorreto.png'
 
 // document.getElementById('btn-jogarNovamente').addEventListener('click', jogarNovamente);
 
@@ -57,9 +57,11 @@ export default function Quizz() {
         <>
             <div className='infoPerguntas'>
                 <div className='contagemPerguntas'>
-                    <span>Pergunta {perguntaAtual + 1}/{questions.length}</span>
+                    <div><span>Pergunta {perguntaAtual + 1}/{questions.length}</span></div>
+                    <div><span className='pontuacao'>Pontuação: {pontos}</span></div>
                 </div>
                 <div className='pergunta'>{questions[perguntaAtual].pergunta}</div>
+
             </div>
             
             <div className='resposta'>

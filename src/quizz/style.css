@@ -39,7 +39,6 @@
 .pergunta{
     margin-bottom: 12px;
     margin-top: 40px;
-    font-size: larger;
     font-size: xx-large;
     text-align: center;
 }
@@ -115,4 +114,14 @@ button:hover{
 }
 #btn-jogarNovamente{
     width: fit-content;
+}
+
+
+@media screen and (max-width:800px) {
+    .container {
+        max-width: 80vw;
+    }
+    .contagemPerguntas span, .pontuacao {
+        font-size: medium;
+    }
 }
